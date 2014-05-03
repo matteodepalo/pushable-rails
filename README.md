@@ -43,7 +43,7 @@ Including `Pushable` will also add `client_id` as a virtual attribute. Your clie
 To add the `client_id` attribute to the model json you can include `PushableSerializer` in your `ActiveModel::Serializer`s, like this:
 
 ```ruby
-class DummyModelSerializer < ActiveRecord::Base
+class DummyModelSerializer < ActiveModel::Serializer
   include PushableSerializer
 end
 ```
