@@ -2,6 +2,7 @@ require 'pushable'
 require 'database_cleaner'
 require 'sqlite3'
 require 'active_record'
+require 'active_model_serializers'
 
 ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
@@ -16,7 +17,7 @@ RSpec.configure do |config|
 
   config.before(:suite) do
     DatabaseCleaner.strategy = :truncation
-    DatabaseCleaner.clean_with(:truncation)
+    DatabaseCleaner.clean
   end
 
   config.before(:each) do

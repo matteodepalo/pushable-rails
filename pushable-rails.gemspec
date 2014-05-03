@@ -20,6 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'rails'
   spec.add_dependency 'pusher'
+  spec.add_dependency 'active_model_serializers'
   spec.add_development_dependency 'bundler', '~> 1.5'
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'database_cleaner'

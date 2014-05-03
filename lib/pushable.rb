@@ -1,4 +1,5 @@
 require 'pushable/version'
+require 'pushable/serializer'
 require 'active_support'
 require 'pusher'
 
