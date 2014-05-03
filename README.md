@@ -1,4 +1,4 @@
-# Pushable::Rails
+# pushable-rails
 
 Send model updates to Pusher
 
@@ -33,13 +33,13 @@ Channel: `pusher`
 Events:
 
 - Create
-'dummy_model.destroy'
+`dummy_model.destroy`
 
 - Update
-'dummy_model.update'
+`dummy_model.update`
 
 - Destroy
-'dummy_model.destroy'
+`dummy_model.destroy`
 
 The payload will be the output of the model instance `to_json`. If defined, a serializer will be used (eg. `DummyModelSerializer`).
 
