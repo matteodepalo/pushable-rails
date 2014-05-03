@@ -6,15 +6,11 @@ Send model updates to Pusher
 
 Add this line to your application's Gemfile:
 
-    gem 'pushable-rails'
+    gem 'pushable-rails', require: 'pushable'
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install pushable-rails
 
 ## Usage
 
