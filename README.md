@@ -39,6 +39,15 @@ Events:
 
 The payload will be the output of the model instance `to_json`. If defined, a serializer will be used (eg. `DummyModelSerializer`).
 
+Including `Pushable` will also add `client_id` as a virtual attribute. Your client can use this attribute to distinguish not yet saved records.
+To add the `client_id` attribute to the model json you can include `PushableSerializer` in your `ActiveModel::Serializer`s, like this:
+
+```ruby
+class DummyModelSerializer < ActiveRecord::Base
+  include PushableSerializer
+end
+```
+
 ## Contributing
 
 1. Fork it ( http://github.com/<my-github-username>/pushable-rails/fork )
