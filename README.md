@@ -48,6 +48,10 @@ class DummyModelSerializer < ActiveModel::Serializer
 end
 ```
 
+## Integrations
+
+This library works well with [ember-pushable](https://github.com/matteodepalo/ember-pushable)
+
 ## Contributing
 
 1. Fork it ( http://github.com/matteodepalo/pushable-rails/fork )
