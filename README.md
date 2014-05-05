@@ -24,9 +24,9 @@ end
 
 Now every time you create, update or destroy `DummyModel`s your app will send the corresponding notifications to pusher.
 
-Channel: `pusher`
+## Events
 
-Events:
+Channel: `pusher`
 
 - Create
 `dummy_model.destroy`
